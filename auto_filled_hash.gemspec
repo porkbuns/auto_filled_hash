@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = ""
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0")
+  spec.files         = [".gitignore", "Gemfile", "LICENSE.txt", "README.md", "Rakefile", "auto_filled_hash.gemspec", "lib/auto_filled_hash.rb", "lib/auto_filled_hash/version.rb"]
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
